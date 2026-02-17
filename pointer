@@ -1,0 +1,8 @@
+
+#include <stdio.h>
+int main(){
+    int a=12;
+    int* addr1= &a;
+    printf("addr of a is %p\n",addr1);
+    printf("value  of a is %d",*addr1);
+}

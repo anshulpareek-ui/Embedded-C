@@ -1,0 +1,75 @@
+#include <stdio.h>
+
+int main()
+{
+    char choice;
+    float area;
+
+    printf("Enter the figure code:\n");
+    printf("'t' for Triangle\n");
+    printf("'z' for Trapezoid\n");
+    printf("'c' for Circle\n");
+    printf("'s' for Square\n");
+    printf("'r' for Rectangle\n");
+    printf("Enter your choice: ");
+    
+    scanf(" %c", &choice);   // space before %c to ignore newline
+
+    switch(choice)
+    {
+        case 't':
+        {
+            float base, height;
+            printf("Enter base and height of triangle: ");
+            scanf("%f %f", &base, &height);
+            area = 0.5 * base * height;
+            printf("Area of Triangle = %.2f\n", area);
+            break;
+        }
+
+        case 'z':
+        {
+            float a, b, height;
+            printf("Enter parallel sides (a, b) and height: ");
+            scanf("%f %f %f", &a, &b, &height);
+            area = 0.5 * (a + b) * height;
+            printf("Area of Trapezoid = %.2f\n", area);
+            break;
+        }
+
+        case 'c':
+        {
+            float radius;
+            printf("Enter radius of circle: ");
+            scanf("%f", &radius);
+            area = 3.14159 * radius * radius;
+            printf("Area of Circle = %.2f\n", area);
+            break;
+        }
+
+        case 's':
+        {
+            float side;
+            printf("Enter side of square: ");
+            scanf("%f", &side);
+            area = side * side;
+            printf("Area of Square = %.2f\n", area);
+            break;
+        }
+
+        case 'r':
+        {
+            float length, width;
+            printf("Enter length and width of rectangle: ");
+            scanf("%f %f", &length, &width);
+            area = length * width;
+            printf("Area of Rectangle = %.2f\n", area);
+            break;
+        }
+
+        default:
+            printf("Invalid choice! Please enter correct code.\n");
+    }
+
+    return 0;
+}

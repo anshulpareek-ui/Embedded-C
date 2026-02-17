@@ -1,0 +1,15 @@
+
+#include <stdio.h>
+int main (){
+    char a1='A';
+    char a2='p';
+    char a3='p';
+    char a4='l';
+    char a5='e';
+    printf("the address of a is %p\n",&a1);
+    printf("the address of a is %p\n",&a2);
+    printf("the address of a is %p\n",&a3);
+    printf("the address of a is %p\n",&a4);
+    printf("the address of a is %p\n",&a5);
+    
+}

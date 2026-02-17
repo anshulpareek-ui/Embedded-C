@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("enter thr num");
+    scanf("%d",&num);
+    int output=num|0x90;
+    printf("0x%x 0x%x",num,output);
+}

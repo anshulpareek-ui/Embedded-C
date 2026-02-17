@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    printf("Enter a number: ");
+    fflush(stdout);   // Force print immediately
+    int n;
+    scanf("%d", &n);
+    return 0;
+}

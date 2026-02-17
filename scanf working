@@ -1,0 +1,28 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{ char c1,c2,c3,c4,c5;
+scanf("%c %c %c %c %c", &c1,&c2,&c3,&c4,&c5);
+    printf(" ASCII value of characters %d %d %d %d %d" ,c1,c2,c3,c4,c5);
+    
+    return 0;
+}
+/* #include <stdio.h>
+
+int main() {
+    int x;
+    char ch;
+
+    scanf("%d", &x);
+    scanf("%c", &ch);
+
+    printf("x=%d, ch=%c", x, ch); op will be x=value but ch=no value;
+}

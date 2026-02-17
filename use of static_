@@ -1,0 +1,24 @@
+
+#include <stdio.h>
+
+void myfunc(){
+    static char a = 23;//variable a will retain its value b?w multiple func calls 
+    a++;
+    printf("%d\n", a);
+}
+
+int main()
+{
+    printf("%d\n", a);
+    myfunc();   // calling the function
+    myfunc();
+    myfunc();
+    return 0;
+}
+/*static means:
+
+The variable is created only once. cant be used in other files 
+
+It retains value between function calls.
+
+Its scope is local to the function.*/

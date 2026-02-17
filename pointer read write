@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+int main(){
+    char a=100;
+    char* ptr=&a;
+    //read the data from the pointer;
+    char data=*ptr;
+    printf("%d\n", data);
+    // write the value in pointer 
+    *ptr=65; 
+    printf(" new value of a %d\n",a);
+    // printing addr of pointer
+    printf("addr of the var a %p",&a);
+}

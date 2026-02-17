@@ -1,0 +1,12 @@
+
+
+#include <stdio.h>
+void addnum(int a,int b,int c){
+    int sum=a+b+c;
+    printf("the sum is %d",sum);
+    
+}
+int main (){
+    addnum(12,13,14);
+   
+}

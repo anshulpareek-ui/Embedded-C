@@ -1,0 +1,11 @@
+#include <stdio.h>
+char a=12;
+void myfunc();
+int main(){
+    printf("value of global var=%d\n",a);
+    myfunc();
+} 
+void myfunc(){
+    a=10;
+     printf("value of local var=%d",a);
+}

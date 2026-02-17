@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdint.h>
+
+struct carmodel
+{
+    int32_t carno;
+    int16_t carmodel;
+    int16_t carmaxspeed;
+    float   carweight;
+};
+
+int main()
+{
+    struct carmodel car1 = {.carweight = 3222.5, 
+                            .carmaxspeed = 300};
+
+    printf("Car Max Speed : %d km/h\n", car1.carmaxspeed);
+    printf("Car Weight    : %.2f kg\n", car1.carweight);
+
+    return 0;
+}

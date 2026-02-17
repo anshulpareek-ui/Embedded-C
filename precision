@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main()
+{
+    double  a=45.789723456;
+    printf("%0.11f", a);
+    return 0;
+}

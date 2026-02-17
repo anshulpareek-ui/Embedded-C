@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("David says , \" Programming is fun !\" \n");
+    printf("\\ \\ \\ \\ Today is holiday \\ \\ \\ \\");
+
+    
+
+  
+}
